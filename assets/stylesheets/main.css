@@ -1,0 +1,855 @@
+                                        body {
+                                            margin: 0px;
+                                            font-family: 'proxima-nova';
+                                        }
+                                        
+                                        .left {
+                                            float: left;
+                                        }
+                                        
+                                        .right {
+                                            float: right;
+                                        }
+                                        
+                                        .clearfix:after {
+                                            content: "";
+                                            display: block;
+                                            clear: both;
+                                        }
+                                        
+                                        .text-center {
+                                            text-align: center;
+                                        }
+                                        
+                                        ul {
+                                            list-style: none;
+                                            margin: 0px;
+                                            padding: 0px;
+                                        }
+                                        
+                                        a {
+                                            text-decoration: none;
+                                        }
+                                        
+                                        h1,
+                                        h2,
+                                        h3,
+                                        h4,
+                                        h5,
+                                        h6 {
+                                            margin-top: 0px;
+                                        }
+                                        /* TOPBAR */
+                                        
+                                        #topbar {
+                                            background-color: #004482;
+                                        }
+                                        
+                                        #topbar ul li {
+                                            display: inline-block;
+                                            text-transform: uppercase;
+                                        }
+                                        
+                                        #topbar ul li a {
+                                            color: #ffffff;
+                                            font-size: 11px;
+                                        }
+                                        
+                                        #tb-list ul li {
+                                            margin: 7px 5px 0px 6px;
+                                            letter-spacing: 2px;
+                                        }
+                                        
+                                        #tb-social ul li {
+                                            margin: 7px 14px 7px 0px;
+                                        }
+                                        /* HEADER */
+                                        
+                                        #header {
+                                            background-color: #0055A6;
+                                            /* position: fixed;
+                                            z-index: 100;
+                                            width: 100%; */
+                                        }
+                                        
+                                        #header ul li a {
+                                            color: #ffffff;
+                                        }
+                                        
+                                        #logo {
+                                            width: 11%;
+                                            margin: 7px 5px 5px 5px;
+                                        }
+                                        
+                                        #logo img {
+                                            width: 100%;
+                                        }
+                                        
+                                        .header-menu ul li {
+                                            display: inline-block;
+                                            text-transform: uppercase;
+                                            margin: 13px 13px 0px 5px;
+                                        }
+                                        
+                                        #header .header-menu ul {
+                                            position: relative;
+                                        }
+                                        
+                                        #header .header-menu ul li .dropdown {
+                                            position: absolute;
+                                            background-color: #fff;
+                                            width: 60%;
+                                            z-index: 100;
+                                            padding: 20px;
+                                            top: 35px;
+                                            border-top: 4px solid #5EAFFD;
+                                            display: none;
+                                            margin-left: -30px;
+                                        }
+                                        
+                                        #header .header-menu ul li .dropdown ul li {
+                                            width: 40%;
+                                            letter-spacing: 2px;
+                                            margin-bottom: 10px;
+                                            padding: 0px;
+                                        }
+                                        
+                                        #header .header-menu ul li .dropdown ul li a {
+                                            color: #000;
+                                        }
+                                        
+                                        #header .header-menu ul li .dropdown:before {
+                                            content: "";
+                                            position: absolute;
+                                            top: -14px;
+                                            left: 10%;
+                                            border: 5px solid #5EAFFD;
+                                            border-color: transparent transparent #5EAFFD;
+                                        }
+                                        
+                                        #header .header-menu ul li:hover .dropdown {
+                                            display: block;
+                                        }
+                                        
+                                        .user-interact ul li {
+                                            display: inline-block;
+                                            margin: 13px 13px 0px 5px;
+                                        }
+                                        /* section1 */
+                                        
+                                        #sec-1 {
+                                            background-color: #272F3E;
+                                            width: 100%;
+                                        }
+                                        
+                                        #sec-1 a {
+                                            display: block;
+                                            margin: 0px -2px 0px;
+                                            color: #fff;
+                                        }
+                                        
+                                        #sec-1 .cntain {
+                                            width: 78%;
+                                        }
+                                        
+                                        #sec-1 .c1,
+                                        #sec-1 .c2 {
+                                            width: 50%;
+                                        }
+                                        
+                                        #sec-1 .img1 img,
+                                        #sec-1 .img2 img,
+                                        #sec-1 .img3 img {
+                                            width: 99%;
+                                        }
+                                        
+                                        #sec-1 .img1 {
+                                            position: relative;
+                                            overflow: hidden;
+                                        }
+                                        
+                                        #sec-1 .img2 {
+                                            position: relative;
+                                            overflow: hidden;
+                                        }
+                                        
+                                        #sec-1 .img3 {
+                                            position: relative;
+                                            overflow: hidden;
+                                        }
+                                        
+                                        #sec-1 .img1:after,
+                                        #sec-1 .img2:after,
+                                        #sec-1 .img3:after {
+                                            content: "";
+                                            width: 99%;
+                                            height: 70%;
+                                            position: absolute;
+                                            left: 0px;
+                                            bottom: 2px;
+                                            opacity: 0.9;
+                                            background: linear-gradient(180deg, transparent 0%, #000 60%);
+                                        }
+                                        
+                                        #sec-1 .news {
+                                            z-index: 10;
+                                            font-size: 18px;
+                                            position: absolute;
+                                            width: 100%;
+                                            padding: 20px;
+                                            bottom: -60px;
+                                            transition-duration: 0.5s;
+                                        }
+                                        
+                                        #sec-1 .newsDesc {
+                                            opacity: 0;
+                                            transition-duration: 0.5s;
+                                        }
+                                        
+                                        #sec-1 .img1:hover .news,
+                                        #sec-1 .img2:hover .news,
+                                        #sec-1 .img3:hover .news {
+                                            bottom: 0px;
+                                        }
+                                        
+                                        #sec-1 .img1:hover .newsDesc,
+                                        #sec-1 .img2:hover .newsDesc,
+                                        #sec-1 .img3:hover .newsDesc {
+                                            opacity: 1;
+                                        }
+                                        
+                                        #sec-1 .headlines .hl {
+                                            width: 20%;
+                                        }
+                                        
+                                        #sec-1 .headlines .hl h4 {
+                                            margin: 0px;
+                                        }
+                                        
+                                        #sec-1 .headlines .hl a {
+                                            padding: 13px 0px 13px 30px;
+                                        }
+                                        /* section-2 */
+                                        
+                                        #sec-2M {
+                                            border-width: 0px 0px 5px 0px;
+                                            border-color: rgba(173, 163, 163, 0.5);
+                                            border-style: solid;
+                                        }
+                                        
+                                        #sec-2 {
+                                            margin: 2% 1% 0px 1%;
+                                            padding: 0% 0% 2% 0%;
+                                        }
+                                        
+                                        #sec-2 a {
+                                            display: block;
+                                        }
+                                        
+                                        #sec-2 .c1 a,
+                                        #sec-2 .c3 a {
+                                            color: #fff;
+                                            margin: 0px;
+                                            padding: 0px;
+                                        }
+                                        
+                                        #sec-2 .c1 {
+                                            width: 30%;
+                                        }
+                                        
+                                        #sec-2 .c1 img {
+                                            width: 100%;
+                                        }
+                                        
+                                        #sec-2 .c3 {
+                                            width: 30%;
+                                        }
+                                        
+                                        #sec-2 .c3 img {
+                                            width: 100%;
+                                        }
+                                        
+                                        #sec-2 .Fadeimg1 {
+                                            position: relative;
+                                            overflow: hidden;
+                                        }
+                                        
+                                        #sec-2 .Fadeimg3 {
+                                            position: relative;
+                                            overflow: hidden;
+                                        }
+                                        
+                                        #sec-2 .c1 .news,
+                                        #sec-2 .c3 .news {
+                                            z-index: 10;
+                                            font-size: 40px;
+                                            position: absolute;
+                                            width: 100%;
+                                            padding: 0px 20px;
+                                            bottom: 0px;
+                                        }
+                                        
+                                        #sec-2 .c1 h5,
+                                        #sec-2 .c3 h5 {
+                                            margin: 0px;
+                                        }
+                                        
+                                        #sec-2 .c1 p,
+                                        #sec-2 .c3 p {
+                                            margin: 0px 0px 25px -8px;
+                                        }
+                                        
+                                        #sec-2 .c1 .newsDesc,
+                                        #sec-2 .c3 .newsDesc {
+                                            padding: 0px 10px;
+                                            font-size: 20px;
+                                        }
+                                        
+                                        #sec-2 .Fadeimg1:after,
+                                        #sec-2 .Fadeimg3:after {
+                                            content: "";
+                                            width: 100%;
+                                            height: 70%;
+                                            position: absolute;
+                                            /* left: 0px; */
+                                            bottom: 4px;
+                                            opacity: 0.9;
+                                            background: linear-gradient(180deg, transparent 0%, #000 60%);
+                                        }
+                                        /* SEC-2 COLOUMN-2 */
+                                        
+                                        #sec-2 .c2 .c2-video a {
+                                            display: block;
+                                        }
+                                        
+                                        #sec-2 .c2 .c2-video .main-text {
+                                            font-size: 36px;
+                                            color: #000;
+                                            font-weight: 600;
+                                        }
+                                        
+                                        #sec-2 .c2 {
+                                            width: 35%;
+                                            margin: 0% 0% 0% 2.5%;
+                                        }
+                                        
+                                        #sec-2 .c2-video {
+                                            width: 100%;
+                                        }
+                                        
+                                        #sec-2 .c2-video .video img {
+                                            width: 100%;
+                                        }
+                                        
+                                        #sec-2 .c2-video .video {
+                                            position: relative;
+                                            overflow: hidden;
+                                        }
+                                        
+                                        #sec-2 .c2-video .video .video-icon {
+                                            position: absolute;
+                                            z-index: 10;
+                                            bottom: 35%;
+                                            left: 44%;
+                                            font-size: 110%;
+                                        }
+                                        
+                                        #sec-2 .c2-video .video-icon .play i {
+                                            color: rgb(3, 53, 110);
+                                        }
+                                        
+                                        #sec-2 .c2 .c2-video .text {
+                                            font-size: 18px;
+                                            color: grey;
+                                            margin: 0px 0px 24px 0px;
+                                            padding: 0px 0px 20px 0px;
+                                            border-width: 0px 0px 1px 0px;
+                                            border-color: rgba(131, 130, 130, 0.5);
+                                            border-style: solid;
+                                        }
+                                        
+                                        #sec-2 .c2 .sec-2R1 a {
+                                            display: block;
+                                        }
+                                        
+                                        #sec-2 .c2 .sec-2R1 .news-tag,
+                                        #sec-2 .c2 .sec-2R2 .news-tag,
+                                        #sec-2 .c2 .sec-2R3 .news-tag {
+                                            border-width: 0px 0px 1px 0px;
+                                            border-color: rgba(131, 130, 130, 0.5);
+                                            border-style: solid;
+                                            padding: 0px 0px 53px 0px;
+                                        }
+                                        
+                                        #sec-2 .c2 .sec-2R2,
+                                        #sec-2 .c2 .sec-2R3,
+                                        #sec-2 .c2 .sec-2R4 {
+                                            margin: 15px 0px 0px 0px;
+                                        }
+                                        
+                                        #sec-2 .c2 .sec-2R1 .news-tag,
+                                        #sec-2 .c2 .sec-2R2 .news-tag,
+                                        #sec-2 .c2 .sec-2R3 .news-tag,
+                                        #sec-2 .c2 .sec-2R4 .news-tag {
+                                            color: grey;
+                                            font-size: 12px;
+                                            letter-spacing: 2px;
+                                        }
+                                        
+                                        #sec-2 .c2 .sec-2R1 .news,
+                                        #sec-2 .c2 .sec-2R2 .news,
+                                        #sec-2 .c2 .sec-2R3 .news,
+                                        #sec-2 .c2 .sec-2R4 .news {
+                                            font-size: 20px;
+                                            color: #000;
+                                            font-weight: bolder;
+                                            padding: 0px 0px 0px 56px;
+                                            margin: 0px 0px 0px 56px;
+                                        }
+                                        /* section-3 */
+                                        
+                                        #main-inner {
+                                            background-color: rgb(233, 233, 233);
+                                        }
+                                        
+                                        #sec-3 {
+                                            margin: 0% 1% 0% 1%;
+                                        }
+                                        
+                                        #sec-3 a {
+                                            display: block;
+                                        }
+                                        
+                                        #sec-3 .c1,
+                                        #sec-3 .c2,
+                                        #sec-3 .c3,
+                                        #sec-3 .c4 {
+                                            border-width: 1px 1px 1px 1px;
+                                            border-color: lightgray;
+                                            border-style: solid;
+                                            width: 22%;
+                                        }
+                                        
+                                        #sec-3 .c1 .img1 img,
+                                        #sec-3 .c2 .img2 img,
+                                        #sec-3 .c3 .img3 img,
+                                        #sec-3 .c4 .img4 img {
+                                            width: 100%;
+                                        }
+                                        
+                                        #sec-3 .text {
+                                            color: gray;
+                                            font-size: 12px;
+                                            letter-spacing: 2px;
+                                            padding: 3% 0px 3% 0px;
+                                            margin: 0px 7%;
+                                        }
+                                        
+                                        #sec-3 .text-1,
+                                        #sec-3 .text-2,
+                                        #sec-3 .text-3 {
+                                            color: #000;
+                                            font-family: 'proxima-nova';
+                                            font-size: 18px;
+                                            word-spacing: 1px;
+                                            font-weight: 500;
+                                            margin: 0px 6%;
+                                            border-width: 0px 0px 1px 0px;
+                                            border-color: rgba(131, 130, 130, 0.5);
+                                            border-style: solid;
+                                        }
+                                        
+                                        #sec-3 .text-3 {
+                                            padding: 0px 0px 20% 0px;
+                                        }
+                                        
+                                        #sec-3 .text-1,
+                                        #sec-3 .text-2 {
+                                            padding: 0px 0px 3% 0px;
+                                        }
+                                        
+                                        #sec-3 .c1,
+                                        #sec-3 .c2,
+                                        #sec-3 .c3,
+                                        #sec-3 .c4 {
+                                            margin: 2.5% 0px 0px 0px;
+                                        }
+                                        
+                                        #sec-3 .more-text {
+                                            margin: 6% 0% 6% 5%;
+                                            color: rgb(17, 120, 161);
+                                        }
+                                        
+                                        #sec-3 .text-2,
+                                        #sec-3 .text-3 {
+                                            padding: 3% 0px 3% 0px;
+                                        }
+                                        /* #sec-3 .c2,
+                                        #sec-3 .c3 {
+                                            margin: 0% 5%;
+                                        } */
+                                        
+                                        #sec-3 .c2 {
+                                            margin: 2.5% 0px 0px 3.7%;
+                                        }
+                                        
+                                        #sec-3 .c3 {
+                                            margin: 2.5% 0% 0px 3.7%;
+                                        }
+                                        /* section-4 */
+                                        
+                                        #sec-4 {
+                                            margin: 0% 1% 0% 1%;
+                                        }
+                                        
+                                        #sec-4 a {
+                                            display: block;
+                                        }
+                                        
+                                        #sec-4 .c1,
+                                        #sec-4 .c2,
+                                        #sec-4 .c3,
+                                        #sec-4 .c4 {
+                                            border-width: 1px 1px 1px 1px;
+                                            border-color: lightgray;
+                                            border-style: solid;
+                                            width: 22%;
+                                        }
+                                        
+                                        #sec-4 .c1 .img1 img,
+                                        #sec-4 .c2 .img2 img,
+                                        #sec-4 .c3 .img3 img,
+                                        #sec-4 .c4 .img4 img {
+                                            width: 100%;
+                                        }
+                                        
+                                        #sec-4 .text {
+                                            color: gray;
+                                            font-size: 12px;
+                                            letter-spacing: 2px;
+                                            padding: 3% 0px 3% 0px;
+                                            margin: 0px 7%;
+                                        }
+                                        
+                                        #sec-4 .text-1,
+                                        #sec-4 .text-2,
+                                        #sec-4 .text-3 {
+                                            color: #000;
+                                            font-family: 'proxima-nova';
+                                            font-size: 18px;
+                                            word-spacing: 1px;
+                                            font-weight: 500;
+                                            margin: 0px 6%;
+                                        }
+                                        
+                                        #sec-4 .text-3 {
+                                            padding: 0px 0px 20% 0px;
+                                        }
+                                        
+                                        #sec-4 .text-1,
+                                        #sec-4 .text-2 {
+                                            padding: 0px 0px 3% 0px;
+                                        }
+                                        
+                                        #sec-4 .c1,
+                                        #sec-4 .c2,
+                                        #sec-4 .c3,
+                                        #sec-4 .c4 {
+                                            margin: 2.5% 0px 0px 0px;
+                                        }
+                                        
+                                        #sec-4 .more-text {
+                                            margin: 6% 0% 6% 5%;
+                                            color: rgb(17, 120, 161);
+                                        }
+                                        
+                                        #sec-4 .text-2,
+                                        #sec-4 .text-3 {
+                                            padding: 3% 0px 3% 0px;
+                                        }
+                                        /* #sec-3 .c2,
+                                        #sec-3 .c3 {
+                                            margin: 0% 5%;
+                                        } */
+                                        
+                                        #sec-4 .c2 {
+                                            margin: 2.5% 0px 0px 3.7%;
+                                        }
+                                        
+                                        #sec-4 .c3 {
+                                            margin: 2.5% 0% 0px 3.7%;
+                                        }
+                                        /* section-5 */
+                                        
+                                        #sec-5 {
+                                            margin: 0% 1% 0% 1%;
+                                        }
+                                        
+                                        #sec-5 a {
+                                            display: block;
+                                        }
+                                        
+                                        #sec-5 .c1,
+                                        #sec-5 .c2,
+                                        #sec-5 .c3,
+                                        #sec-5 .c4 {
+                                            border-width: 1px 1px 1px 1px;
+                                            border-color: lightgray;
+                                            border-style: solid;
+                                            width: 22%;
+                                        }
+                                        
+                                        #sec-5 .c1 .img1 img,
+                                        #sec-5 .c2 .img2 img,
+                                        #sec-5 .c3 .img3 img,
+                                        #sec-5 .c4 .img4 img {
+                                            width: 100%;
+                                        }
+                                        
+                                        #sec-5 .text {
+                                            color: gray;
+                                            font-size: 12px;
+                                            letter-spacing: 2px;
+                                            padding: 3% 0px 3% 0px;
+                                            margin: 0px 7%;
+                                        }
+                                        
+                                        #sec-5 .text-1,
+                                        #sec-5 .text-2,
+                                        #sec-5 .text-3 {
+                                            color: #000;
+                                            font-family: 'proxima-nova';
+                                            font-size: 18px;
+                                            word-spacing: 1px;
+                                            font-weight: 500;
+                                            margin: 0px 6%;
+                                            border-width: 0px 0px 1px 0px;
+                                            border-color: rgba(131, 130, 130, 0.5);
+                                            border-style: solid;
+                                        }
+                                        
+                                        #sec-5 .text-3 {
+                                            padding: 0px 0px 20% 0px;
+                                        }
+                                        
+                                        #sec-5 .text-1,
+                                        #sec-5 .text-2 {
+                                            padding: 0px 0px 3% 0px;
+                                        }
+                                        
+                                        #sec-5 .c1,
+                                        #sec-5 .c2,
+                                        #sec-5 .c3,
+                                        #sec-5 .c4 {
+                                            margin: 2.5% 0px 0px 0px;
+                                        }
+                                        
+                                        #sec-5 .more-text {
+                                            margin: 6% 0% 6% 5%;
+                                            color: rgb(17, 120, 161);
+                                        }
+                                        
+                                        #sec-5 .text-2,
+                                        #sec-5 .text-3 {
+                                            padding: 3% 0px 3% 0px;
+                                        }
+                                        /* #sec-3 .c2,
+                                        #sec-3 .c3 {
+                                            margin: 0% 5%;
+                                        } */
+                                        
+                                        #sec-5 .c2 {
+                                            margin: 2.5% 0px 0px 3.7%;
+                                        }
+                                        
+                                        #sec-5 .c3 {
+                                            margin: 2.5% 0% 0px 3.7%;
+                                        }
+                                        /* above-footer */
+                                        
+                                        #above-footer a {
+                                            display: block;
+                                        }
+                                        
+                                        #above-footer .img {
+                                            width: 8%;
+                                            margin: 6% auto 1%;
+                                        }
+                                        
+                                        #above-footer .img img {
+                                            width: 100%;
+                                        }
+                                        
+                                        #above-footer .text-1 {
+                                            font-weight: 800;
+                                            font-size: 35px;
+                                            width: 38%;
+                                            margin: 1% auto;
+                                        }
+                                        
+                                        #above-footer .text-2 {
+                                            font-size: 20px;
+                                            font-weight: 500;
+                                            width: 68%;
+                                            margin: 1% auto 2%;
+                                        }
+                                        
+                                        #above-footer .text-3 {
+                                            width: 45%;
+                                            margin: 1.5% auto;
+                                        }
+                                        
+                                        #above-footer .sign-up input[type="text"] {
+                                            block-size: 43px;
+                                            padding: 0% 65% 0% 0%;
+                                        }
+                                        
+                                        #above-footer .sign-up .sign-up-1 {
+                                            margin: 0% 0% 0% 36%;
+                                        }
+                                        
+                                        #above-footer .sign-up .sign-up-2 button {
+                                            block-size: 47px;
+                                            font-family: 'proxima-nova';
+                                            width: 170%;
+                                            border: none;
+                                            color: #fff;
+                                            background-color: rgb(7, 113, 199);
+                                            font-size: 15px;
+                                        }
+                                        
+                                        #above-footer .sign-up .sign-up-2 {
+                                            padding: 0% 0% 0% 8.3%;
+                                        }
+                                        
+                                        #above-footer .text-3 span {
+                                            font-size: 15px;
+                                            font-weight: bold;
+                                        }
+                                        
+                                        #above-footer .text-4 {
+                                            font-weight: 400;
+                                            width: 12%;
+                                            margin: 1.5% auto;
+                                            padding: 0% 0% 3.5% 0%;
+                                        }
+                                        /* footer */
+                                        
+                                        #footer .logo {
+                                            width: 20%;
+                                            margin: 0 auto;
+                                        }
+                                        
+                                        #footer .logo img {
+                                            width: 100%;
+                                        }
+                                        
+                                        #footer .icons ul li {
+                                            display: inline-block;
+                                        }
+                                        
+                                        #footer .icons ul {
+                                            width: 100%;
+                                            padding: 7% 0px 0px 83%;
+                                        }
+                                        
+                                        #footer .icons ul li {
+                                            padding: 0% 0.3%;
+                                        }
+                                        
+                                        #footer ul li .fac i {
+                                            color: #3B5998;
+                                        }
+                                        
+                                        #footer ul li .twit i {
+                                            color: #55ACEE;
+                                        }
+                                        
+                                        #footer ul li .google i {
+                                            color: rgb(245, 67, 13);
+                                        }
+                                        
+                                        #footer ul li .you i {
+                                            color: #BB0000;
+                                        }
+                                        
+                                        #footer ul li .insta i {
+                                            color: #3F729B;
+                                        }
+                                        
+                                        #footer ul li .pin i {
+                                            color: rgb(184, 12, 12);
+                                        }
+                                        
+                                        #footer ul li .wht i {
+                                            color: green;
+                                        }
+                                        
+                                        #footer .f-nav {
+                                            width: 100%;
+                                            margin: 0 auto;
+                                        }
+                                        
+                                        #footer .f-nav ul {
+                                            margin: 3% 1%;
+                                        }
+                                        
+                                        #footer .f-nav ul li {
+                                            display: inline-block;
+                                            padding: 0% 0.7%;
+                                        }
+                                        
+                                        #footer .f-nav ul li a {
+                                            color: grey;
+                                            font-weight: bold;
+                                            word-spacing: 4px;
+                                        }
+                                        
+                                        #footer .f-nav ul li:nth-child(12) {
+                                            padding: 1% 0% 0% 40%;
+                                        }
+                                        /* #footer .img-3{
+                                            padding: 0% 10% 0% 0%;
+                                        } */
+                                        
+                                        #footer .images {
+                                            margin: 0% 0% 0% 35%;
+                                        }
+                                        
+                                        #footer .img-1,
+                                        #footer .img-2,
+                                        #footer .img-3 {
+                                            width: 15%;
+                                            padding: 0% 2% 0% 0%;
+                                        }
+                                        
+                                        #footer .img-1 img,
+                                        #footer .img-2 img,
+                                        #footer .img-3 img {
+                                            width: 100%;
+                                        }
+                                        
+                                        #footer .text-1 i,
+                                        #footer .text-1 span,
+                                        #footer .text-2 span,
+                                        #footer .text-3 span {
+                                            color: grey;
+                                        }
+                                        
+                                        #footer .text-1 {
+                                            width: 30%;
+                                            margin: 1% auto 0%;
+                                            font-family: 'proxima-nova';
+                                        }
+                                        
+                                        #footer .text-2 {
+                                            width: 69%;
+                                            margin: 0.5% auto;
+                                            font-family: 'proxima-nova';
+                                        }
+                                        
+                                        #footer .text-3 {
+                                            width: 25%;
+                                            margin: 0 auto 14%;
+                                            font-family: 'proxima-nova';
+                                        }
